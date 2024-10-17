@@ -1,0 +1,11 @@
+name : test_dist_mutex
+attach: false
+root: ./
+windows:
+  - nodes:
+      layout: tiled
+      panes:
+        - ros2 launch lamport_clks launcher.py num_id:=0
+        - ros2 launch lamport_clks launcher.py num_id:=1
+        - ros2 launch lamport_clks launcher.py num_id:=2
+        - ros2 launch lamport_clks launcher.py num_id:=3
